@@ -1,6 +1,6 @@
 
 ## MockupInter App using Clean Architecture and MVVM
-The purpose of this project is to show the basic aspects of Clean Architecture and MVVM design pattern, dependency injection, Concurrence, SwiftUI.
+The purpose of this project is to show the basic aspects of Clean Architecture and MVVM design pattern, protocol-oriented-programming, Concurrence, SwiftUI.
 
 ## Architecture
 The architecture is structured into three main layers:
@@ -15,95 +15,95 @@ The architecture is structured into three main layers:
 .
 ├── MockupInterview
 │   ├── Application
-│   │   └── MockupInterviewApp.swift
+│   │   └── MockupInterviewApp.swift
 │   ├── Data
-│   │   ├── APIServiceBase
-│   │   │ ├── Common
-│   │   │ │ ├── APIServiceBase.swift
-│   │   │ │ ├── BaseEndpoint.swift
-│   │   │ │ └── APIErrorBase.swift
-│   │   │ ├── API
-│   │   │ │ ├── APIService
-│   │   │ │ └── APIUrls
-│   │   │ ├── Endpoint
-│   │   │ │ ├── Endpoint.swift
-│   │   │ │ ├── UserEndPoint.swift
-│   │   │ │ └── UserDetailEndpoint.swift
-│   │   ├── Gateway
-│   │   │ ├── UserGateway.swift
-│   │   │ └── UserDetailGateway.swift
+│   │   ├── APIServiceBase
+│   │   │   ├── Common
+│   │   │   │   ├── APIServiceBase.swift
+│   │   │   │   ├── BaseEndpoint.swift
+│   │   │   │   └── APIErrorBase.swift
+│   │   │   ├── API
+│   │   │   │   ├── APIService
+│   │   │   │   └── APIUrls
+│   │   │   └── Endpoint
+│   │   │       ├── Endpoint.swift
+│   │   │       ├── UserEndPoint.swift
+│   │   │       └── UserDetailEndpoint.swift
+│   │   ├── Gateway 
+│   │   │   ├── UserGateway.swift
+│   │   │   └── UserDetailGateway.swift
 │   │── Domain
-│   │   ├── UseCase
-│   │   │   │── UserUseCase.swift
-│   │   │   └── UserUseCase.swift
-│   │   ├── Entities
-│   │   │ ├── Common
-│   │   │ │ ├── EmptyModel.swift
-│   │   │ │ └── APIError.swift
-│   │   │ ├── User.swift
-│   │   │ └── UserDetail.swift
+│   │   ├── UseCase
+│   │   │   │── UserUseCase.swift
+│   │   │   └── UserUseCase.swift
+│   │   ├── Entities
+│   │   │   ├── Common
+│   │   │   │   ├── EmptyModel.swift
+│   │   │   │   └── APIError.swift
+│   │   │   ├── User.swift
+│   │   │   └── UserDetail.swift
 │   ├── Presentation
-│   │   ├── Common
-│   │   │ ├── RefreshableListView.swift
-│   │   │ ├── SFSafiriView.swift
-│   │   │ ├── LoadingView.swift
-│   │   │ ├── BackButton.swift
-│   │   │ └── CardView.swift
-│   │   ├── Splash
-│   │   │ └── SplashView.swift
-│   │   ├── UserDetail
-│   │   │ ├── ChildView
-│   │   │ │ ├── LocationView.swift
-│   │   │ │ ├── FollowView.swift
-│   │   │ │ └── Blog.swift
-│   │   │ ├── UserDetailView.swift
-│   │   │ └── UserDetailViewModel.swift
-│   │   ├── UserDetail
-│   │   │ ├── ChildView
-│   │   │ │ └── LandingPageView.swift
-│   │   │ ├── UserView.swift
-│   │   │ └── UserViewModel.swift
+│   │   ├── Common
+│   │   │   ├── RefreshableListView.swift
+│   │   │   ├── SFSafiriView.swift
+│   │   │   ├── LoadingView.swift
+│   │   │   ├── BackButton.swift
+│   │   │   └── CardView.swift
+│   │   ├── Splash
+│   │   │   └── SplashView.swift
+│   │   ├── UserDetail
+│   │   │   ├── ChildView
+│   │   │   │    ├── LocationView.swift
+│   │   │   │    ├── FollowView.swift
+│   │   │   │    └── Blog.swift
+│   │   │   └── UserDetailView.swift
+│   │   │    └── UserDetailViewModel.swift
+│   │   ├── UserDetail
+│   │   │    ├── ChildView
+│   │   │    │    └── LandingPageView.swift
+│   │   │    ├── UserView.swift
+│   │   │    └── UserViewModel.swift
 │   ├── Resources
-│   │   │ ├── Assets.xcassets
-│   │   │ ├── File+
-│   │   │ │ ├── Util.swift
-│   │   │ │ └── Constants.swift
-│   │   │ ├── Extension
-│   │   │ │ ├── PreferenceKey+.swift
-│   │   │ │ ├── CGFloat++.swift
-│   │   │ │ ├── String+.swift
-│   │   │ │ └── ViewDidLoadModifier.swift
-│   │   │ ├── Helper
-│   │   │ │ ├── CoordinatorStack
-│   │   │ │ │ ├── Coordinatable.swift
-│   │   │ │ │ ├── Coordinator.swift
-│   │   │ │ │ ├── CoordinatorPages.swift
-│   │   │ │ │ └── CoordinatorStack.swift
-│   │   │ │ ├── BaseViewModel
-│   │   │ │ │ └── ViewModel.swift
-│   │   │ │ └── ThreadSafe
-│   │   │ │   └── ThreadSafe.swift
-│   │   │ └── Localizable.xcstrings
+│   │   ├── Assets.xcassets
+│   │   ├── File+
+│   │   │   ├── Util.swift
+│   │   │   └── Constants.swift
+│   │   ├── Extension
+│   │   │   ├── PreferenceKey+.swift
+│   │   │   ├── CGFloat++.swift
+│   │   │   ├── String+.swift
+│   │   │   └── ViewDidLoadModifier.swift
+│   │   ├── Helper
+│   │   │   ├── CoordinatorStack
+│   │   │   │   ├── Coordinatable.swift
+│   │   │   │   ├── Coordinator.swift
+│   │   │   │   ├── CoordinatorPages.swift
+│   │   │   │   └── CoordinatorStack.swift
+│   │   │   ├── BaseViewModel
+│   │   │   │   └── ViewModel.swift
+│   │   │   └── ThreadSafe
+│   │   │       └── ThreadSafe.swift
+│   │   └── Localizable.xcstrings
 │   ├── Generated
-│   │     ├──Assets.swift
-│   │     └──Strings.swift
+│   │   ├── Assets.swift
+│   │   └── Strings.swift
 │   └── Preview Content
-│    ├──UserDetailMock.json
-│    ├──UserlMock.json
-│    └──Preview Assets.xcassets
+│       ├── UserDetailMock.json
+│       ├── UserlMock.json
+│       └── Preview Assets.xcassets
 ├── MockupInterviewTests
 │   ├── MockupInterviewTests
 │   ├── Data
-│   │   ├── GatewayMock
-│   │   │ ├── UserGatewayMock.swift
-│   │   │ └── UserDetailGatewayMockup.swift
+│   │   └── GatewayMock
+│   │      ├── UserGatewayMock.swift
+│   │      └── UserDetailGatewayMockup.swift
 │   ├── Data
-│   │   ├── Entities
-│   │   │ ├── UserViewTests.swift
-│   │   │ └── UserDetailViewTests.swift
+│   │   └── Entities
+│   │      ├── UserViewTests.swift
+│   │      └── UserDetailViewTests.swift
 │   └── Presentation
-│    ├── UserViewTests.swift
-│    └── UserDetailViewTests.swift
+│       ├── UserViewTests.swift
+│       └── UserDetailViewTests.swift
 └── GithubUsersUITests
     └──  MockupInterviewUITests.swift
 ```
