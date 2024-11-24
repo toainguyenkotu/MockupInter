@@ -1,0 +1,7 @@
+--swiftversion 5.1
+
+# file options
+--exclude MockupInterview/Generated
+
+# rules
+--disable unusedArguments, wrapMultilineStatementBraces, strongOutlets, trailingCommas, extensionAccessControl

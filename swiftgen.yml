@@ -1,0 +1,12 @@
+strings:
+  inputs: MockupInterview/Resources/en.lproj/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: MockupInterview/Generated/Strings.swift
+
+xcassets:
+  - inputs:
+      - MockupInterview/Resources/Assets.xcassets
+    outputs:
+      - templateName: swift5
+        output: MockupInterview/Generated/Assets.swift

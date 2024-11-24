@@ -1,0 +1,22 @@
+
+//  Localizable.strings
+//  MockupInterview
+//
+//  Created by Toai NDT on 23/11/24.
+//  swiftlint:disable line_length
+
+//MARK: Common
+"error" = "Error";
+"error.message" = "Occur an error";
+"ok" = "OK";
+
+//MARK: Navigation Title
+"navigation.user" = "Github Users";
+"navigation.user.details" = "User Details";
+
+//MARK: User Detail Scene
+
+"blog" = "Blog";
+"follower" = "Follower";
+"following" = "Following";
+
