@@ -5,7 +5,6 @@
 //  Created by Toai NDT on 19/11/24.
 //
 
-import Combine
 import SwiftUI
 
 public struct RefreshableListView<Content: View>: View {
@@ -29,8 +28,6 @@ public struct RefreshableListView<Content: View>: View {
     }
 
     @State private var needToLoadMore = false
-
-    @State var subject = PassthroughSubject<String, Error>()
 
     public var body: some View {
         GeometryReader { geometry in

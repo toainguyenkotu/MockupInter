@@ -5,8 +5,6 @@
 //  Created by Toai NDT on 20/11/24.
 //
 
-import Foundation
-
 protocol UserGatewayProtocol {
     func getListUser(since: Int) async throws -> [User]
 }

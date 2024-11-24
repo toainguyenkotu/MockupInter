@@ -5,8 +5,6 @@
 //  Created by Toai NDT on 23/11/24.
 //
 
-import Foundation
-
 import XCTest
 @testable import MockupInterview
 

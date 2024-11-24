@@ -5,8 +5,6 @@
 //  Created by Toai NDT on 20/11/24.
 //
 
-import Combine
-
 protocol UserUseCase {
     var useGateway: UserGatewayProtocol { get }
 }

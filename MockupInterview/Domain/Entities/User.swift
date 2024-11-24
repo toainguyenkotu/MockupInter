@@ -5,8 +5,6 @@
 //  Created by Toai NDT on 20/11/24.
 //
 
-import Foundation
-
 struct User: Decodable {
     var id = 0
     var login = ""

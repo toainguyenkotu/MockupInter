@@ -5,7 +5,7 @@
 //  Created by Toai NDT on 22/11/24.
 //
 
-import Foundation
+import CoreFoundation
 
 extension CGFloat {
     func expectWidth() -> CGFloat {

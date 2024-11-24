@@ -5,8 +5,6 @@
 //  Created by Toai NDT on 20/11/24.
 //
 
-import Foundation
-
 final class UserEndpoint: Endpoint {
     init(since: Int) {
         let query = [

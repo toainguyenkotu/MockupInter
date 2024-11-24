@@ -131,7 +131,6 @@
 		C4EFFC2C2CF1B58C00E41A17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C4EFFC2F2CF1BDEE00E41A17 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		C4EFFC302CF1BDEE00E41A17 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		C4EFFC342CF1C61F00E41A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C4EFFC3B2CF1F07500E41A17 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C4EFFC3E2CF1F1E400E41A17 /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
 		C4EFFC412CF1F3EC00E41A17 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
@@ -200,7 +199,6 @@
 		C4167E7E2CECC3C30067421E /* MockupInterview */ = {
 			isa = PBXGroup;
 			children = (
-				C4EFFC342CF1C61F00E41A17 /* Info.plist */,
 				C4EFFC202CF0ECBD00E41A17 /* Application */,
 				C416803B2CECD7E70067421E /* Data */,
 				C41680362CECD7E70067421E /* Domain */,

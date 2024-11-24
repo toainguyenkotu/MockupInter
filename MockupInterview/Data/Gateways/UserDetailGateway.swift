@@ -5,8 +5,6 @@
 //  Created by Toai NDT on 23/11/24.
 //
 
-import Foundation
-
 protocol UserDetailGatewayProtocol {
     func getUserInformation(login: String) async throws -> UserDetail
 }

@@ -5,8 +5,6 @@
 //  Created by Toai NDT on 22/11/24.
 //
 
-import Foundation
-
 extension String {
     init(typeName thing: Any.Type) {
         let describingString = String(describing: thing)
